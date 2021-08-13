@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Created by Ghanwa -->
+
+</head>
+<body>
+ <h1>Happy Independence</h1>
+ <h3>Created by Ghanwa</h3>
+
+    <div class="main-wrapper">
+        
+        <dev class="rotation">
+                <div class="img-container">
+                        <dev class="f-side">
+                                <img id="img1" src="" alt="">
+                        </dev>
+                        <dev class="l-side">
+                                <img id="img1" src="" alt="">
+                        </dev>
+                        <dev class="r-side">
+                                <img id="img1" src="" alt="">
+                        </dev>
+                        <dev class="t-side">
+                                <img id="img1" src="" alt="">
+                        </dev>
+                        <dev class="b-side">
+                                <img id="img1" src="" alt="">
+                        </dev>
+                        <dev class="back-side">
+                                <img id="img1" src="" alt="">
+                        </dev>
+                        
+                </div>
+        </dev>
+        
+           
+    </div>
+
+
+
+    <script>
+        var imgLink=[
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD4QlxyHipD8lMuilnGVTpb9qMuW1BpFd-Ow&usqp=CAU",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkm1EmM3QElxTdSxEBBTgixHRJU8bn38wqYw&usqp=CAU",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHaCajr1Vlsem__PjmHzGcnBs13Grz_M5Y4Q&usqp=CAU",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD4QlxyHipD8lMuilnGVTpb9qMuW1BpFd-Ow&usqp=CAU",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkm1EmM3QElxTdSxEBBTgixHRJU8bn38wqYw&usqp=CAU",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHaCajr1Vlsem__PjmHzGcnBs13Grz_M5Y4Q&usqp=CAU",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD4QlxyHipD8lMuilnGVTpb9qMuW1BpFd-Ow&usqp=CAU",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkm1EmM3QElxTdSxEBBTgixHRJU8bn38wqYw&usqp=CAU",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkm1EmM3QElxTdSxEBBTgixHRJU8bn38wqYw&usqp=CAU",
+        " https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHaCajr1Vlsem__PjmHzGcnBs13Grz_M5Y4Q&usqp=CAU",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD4QlxyHipD8lMuilnGVTpb9qMuW1BpFd-Ow&usqp=CAU",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHaCajr1Vlsem__PjmHzGcnBs13Grz_M5Y4Q&usqp=CAU ",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkm1EmM3QElxTdSxEBBTgixHRJU8bn38wqYw&usqp=CAU",
+        
+        ]
+        var imgList=document.getElementsByTagName("img");
+        
+        function loadImg()
+        {
+            for(let i=0;i<imgList.length;i++)
+            {
+                imgList[i].src=imgLink[(Math.floor(Math.random()*imgLink.length))];
+
+            }
+
+        }
+
+        setInterval(loadImg(),5000);
+
+
+    </script>
+</body>
+</html>
